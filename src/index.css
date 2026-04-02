@@ -1,0 +1,49 @@
+:root {
+  --canvas: #060b16;
+  --canvas-alt: #081224;
+  --copy: #d7e3f3;
+  --copy-soft: #97abc6;
+  --copy-strong: #f7fbff;
+  --line: rgba(153, 184, 219, 0.2);
+  --accent: #479bf9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--copy);
+  font: 400 16px/1.5 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(71, 155, 249, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 32%, rgba(83, 193, 255, 0.12), transparent 30%),
+    linear-gradient(170deg, var(--canvas), var(--canvas-alt));
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.15;
+  background-image: linear-gradient(
+    rgba(188, 211, 239, 0.1) 1px,
+    transparent 1px
+  ),
+  linear-gradient(90deg, rgba(188, 211, 239, 0.1) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, black 32%, transparent 88%);
+}
+
+a {
+  color: inherit;
+}
