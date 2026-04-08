@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg-page: #060b19;
+  --bg-panel: #0a132d;
+  --text-strong: #edf4ff;
+  --text-soft: #b8c5e7;
+  --text-muted: #8594b8;
+  --accent-cyan: #58dfff;
+  --border-subtle: rgba(142, 169, 232, 0.25);
+
+  --font-body: 'Outfit', 'Segoe UI', sans-serif;
+  --font-heading: 'Space Grotesk', 'Outfit', sans-serif;
+  --font-mono: 'Consolas', 'SFMono-Regular', monospace;
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100svh;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--text-soft);
+  background:
+    radial-gradient(circle at 8% -10%, rgba(66, 214, 255, 0.26) 0%, transparent 34%),
+    radial-gradient(circle at 90% -18%, rgba(64, 91, 255, 0.3) 0%, transparent 42%),
+    var(--bg-page);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--text-strong);
+}
+
+p {
+  margin: 0;
+}

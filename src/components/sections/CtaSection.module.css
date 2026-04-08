@@ -1,0 +1,35 @@
+.cta {
+  margin-top: 3.3rem;
+  border: 1px solid rgba(77, 174, 255, 0.34);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(62, 211, 255, 0.2) 0%, transparent 45%),
+    linear-gradient(130deg, rgba(37, 84, 193, 0.45) 0%, rgba(39, 52, 116, 0.35) 100%);
+  padding: clamp(1rem, 3vw, 1.6rem);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.cta h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.cta p {
+  color: var(--text-soft);
+}
+
+.actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
